@@ -24,11 +24,11 @@
                 <h5><span style='color:red;'></span></h5>
                 <form>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="status" value="DONE" id="doneRadio">
+                        <input class="form-check-input" type="radio" name="status" value="COMPLETE" id="doneRadio">
                         <label class="form-check-label" for="doneRadio">COMPLETE</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="status" value="IN-PROGRESS" id="inProcessRadio">
+                        <input class="form-check-input" type="radio" name="status" value="PENDING" id="inProcessRadio">
                         <label class="form-check-label" for="inProcessRadio">PENDING</label>
                     </div>
                     <div class="form-check form-check-inline">
@@ -54,13 +54,13 @@
                   <tr>
                     <th scope="row">{{ forloop.counter }}</th>
                     <td><a href="{% url "task-update" task.id %}" style='text-decoration: none;'>{{task.title}}</a></td>
-                    {% if task.status == 'DONE' %}
+                    {% if task.status == 'COMPLETE' %}
                     <td><span class="badge badge-success">{{task.status}}</span></td>
                     {% endif %}
                     {% if task.status == 'TO-DO' %}
                     <td><span class="badge badge-danger">{{task.status}}</span></td>
                     {% endif %}
-                    {% if task.status == 'IN-PROGRESS' %}
+                    {% if task.status == 'PENDING' %}
                     <td><span class="badge badge-warning">{{task.status}}</span></td>
                     {% endif %}
                     <td>{{task.due_date}}</td>

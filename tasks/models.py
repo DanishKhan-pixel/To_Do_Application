@@ -12,7 +12,7 @@ class User(AbstractUser):
 TASK_STATUS = (
     ('TO-DO', 'TO-DO'),
     ('PROGRESS', 'PROGRESS'),
-    ('DONE', 'DONE'),
+    ('COMPLETE', 'COMPLETE'),
 )
 
 class Tasks(models.Model):
