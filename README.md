@@ -7,7 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Docker](#docker)
+
 
 ## Introduction
 
@@ -47,7 +47,7 @@ Before you begin, ensure you have met the following requirements:
 
 - Python (3.6 or higher)
 - Django (3.2 or higher)
-- Docker (for containerization, if desired)
+
 
 ## Installation
 
